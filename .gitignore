@@ -1,0 +1,27 @@
+# setting file
+# ===================
+/Scripts
+/Lib
+/Include
+/share
+/Library
+**/.vscode
+setting.*
+**/.venv/**
+
+# LLM
+# ===================
+*.gguf
+
+# files
+# ===================
+pyvenv.cfg
+*.pyc
+*.pdf
+
+# testing file
+# ===================
+test.*
+*.log
+*.docx
+.env
