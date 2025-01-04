@@ -6,7 +6,7 @@ import { Tooltip } from "@nextui-org/tooltip";
 import { Link } from "@nextui-org/link";
 import { Button, ButtonGroup } from "@nextui-org/button";
 
-import { IMessageInfo } from "@/types";
+import { IMessageInfo } from "@/types/chat/type";
 import { useState } from "react";
 
 export const MessageBox: FC<IMessageInfo> = ({

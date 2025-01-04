@@ -90,7 +90,7 @@ export const LoginButton = () => {
         <>
           <Button
             className="bg-transparent text-medium"
-            onClick={logoutModal.onOpen}
+            onPressEnd={logoutModal.onOpen}
           >
             {role}
           </Button>
@@ -129,7 +129,7 @@ export const LoginButton = () => {
         <>
           <Button
             className="bg-transparent text-medium"
-            onClick={() => {
+            onPressEnd={() => {
               setUsername("");
               setPassword("");
               onOpen();

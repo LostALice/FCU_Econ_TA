@@ -3,6 +3,7 @@ import {
   NavbarContent,
   NavbarBrand,
   NavbarItem,
+  ButtonGroup
 } from "@nextui-org/react";
 
 import { link as linkStyles } from "@nextui-org/theme";
@@ -11,10 +12,11 @@ import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 
-import { ThemeSwitch } from "@/components/theme-switch";
-import { LoginButton } from "@/components/loginButton";
+import { ThemeSwitch } from "@/components/navbar/theme-switch";
+import { LoginButton } from "@/components/navbar/loginButton";
+import { LangSwitch } from "@/components/navbar/langSwitch";
 
-import { Logo } from "@/components/icons";
+import { Logo } from "@/components/navbar/icons";
 
 export const Navbar = () => {
   return (
@@ -54,8 +56,13 @@ export const Navbar = () => {
 
       <NavbarContent className="flex sm:basis-full" justify="end">
         <NavbarItem className="flex gap-2">
-          <LoginButton />
-          <ThemeSwitch />
+          <ButtonGroup
+            className="gap-1"
+          >
+            <LangSwitch />
+            <LoginButton />
+            <ThemeSwitch />
+          </ButtonGroup>
         </NavbarItem>
       </NavbarContent>
     </NextUINavbar>

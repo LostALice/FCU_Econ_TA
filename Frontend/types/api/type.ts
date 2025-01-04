@@ -1,6 +1,6 @@
 // Code by AkinoAlice@TyrantRey
 
-import { IFiles } from "@/types"
+import { IFiles } from "@/types/global"
 
 export interface TAskQuestionRequestFormat {
     chatID: string

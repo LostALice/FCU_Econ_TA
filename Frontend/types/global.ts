@@ -1,3 +1,5 @@
+// Code by AkinoAlice@TyrantRey
+
 import { SVGProps } from "react"
 
 export type IconSvgProps = SVGProps<SVGSVGElement> & {
