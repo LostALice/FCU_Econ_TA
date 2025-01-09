@@ -31,7 +31,7 @@ export const Navbar = () => {
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Logo />
             <p className="font-bold text-inherit px-1">
-              逢甲大學課程問答機械人
+              逢甲大學經濟學課程智能TA
             </p>
           </NextLink>
         </NavbarBrand>

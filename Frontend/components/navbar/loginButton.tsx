@@ -37,7 +37,7 @@ export const LoginButton = () => {
       setRole(userRole);
       setIsLoggedIn(true);
     }
-  }, []);
+  }, [setRole]);
 
   function logout() {
     deleteCookie("role");

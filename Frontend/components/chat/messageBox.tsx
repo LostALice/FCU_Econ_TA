@@ -20,8 +20,8 @@ export const MessageBox: FC<IMessageInfo> = ({
     useState<Boolean>(false);
 
   function rating_answer(questionUUID: string, rating: boolean) {
-    fetch(siteConfig.api_url + "/rating/", {
-      method: "POST",
+    fetch(siteConfig.api_url + "/chatroom/rating/", {
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
@@ -87,7 +87,7 @@ export const MessageBox: FC<IMessageInfo> = ({
                   <div>
                     <Tooltip content={<span>有幫助</span>}>
                       <Button
-                        onClick={() => {
+                        onPressEnd={() => {
                           rating_answer(questionUUID, true);
                         }}
                       >
@@ -96,7 +96,7 @@ export const MessageBox: FC<IMessageInfo> = ({
                     </Tooltip>
                     <Tooltip content={<span>沒有幫助</span>}>
                       <Button
-                        onClick={() => {
+                        onPressEnd={() => {
                           rating_answer(questionUUID, false);
                         }}
                       >
